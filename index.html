@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu Wai Thu</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/4d37218a9e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <i id="cross-icon" class="fa fa-times"></i>
+    <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <nav id="navbar">
+        <div class="image">
+            <img src="data:image/jpeg;base64,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" alt="my-photo">
+        </div>
+        <h1>Nu Wai Thu</h1>
+        <div id="contact">
+            <a id="profile-link" href="https://github.com/nuwaithu24?fbclid=IwAR2rpMUCup34HnU2DjzRqJzCVnWnf5sCBWTuRd20_r7U8q4oQW2dWc8dmHk" target="_blank" class="social-logo"><i class="fa fa-github"></i></a>
+            <a id="profile-link" href="https://www.facebook.com/nuwai.thu" target="_blank" class="social-logo"><i class="fa fa-facebook"></i></a>
+            <a id="profile-link" href="https://www.linkedin.com/in/nu-wai-thu-a9696b211/?fbclid=IwAR18rkgZIS5OT4IogooZ_bKDjgNDcMDrSV-TvBHsNI2mKD4h6MAk7Hh6XEw" target="_blank" class="social-logo"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <ul>
+            <li><a href="#home"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="#about"><i class="fa fa-user-circle"></i><span>About</span></a></li>
+            <li><a href="#resume"><i class="fa fa-file"></i><span>Resume</span></a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <div id="home">
+            <section id="welcome-section">
+                <div class="header">
+                    <h1>Nu Wai Thu</h1>
+                    <p>I'm iOS Native Developer</p>
+                </div>
+                <div class="img-container">
+                    <img src="data:image/jpeg;base64,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" alt="my-photo">
+                </div>
+            </section>
+        </div>
+        <div id="about">
+            <section class="about">
+                <div class="about-1">
+                    <h1>About</h1>
+                    <p>I have at least 6 years experienced at iOS Developing.</br>Well experience in UI/UX design.Good Knowledge and </br> have problem solving skills with video streaming project, </br> digital education project,e-commerce project. <br>
+                        I write and debug coding, can solve problems, able to work under tight deadline.
+                    </p>
+                </div>
+                <div class="about-2">
+                    <h1>iOS Developer</h1>
+                    <ul>
+                        <li><span>Birthday :</span> 24 March 1990</li>
+                        <li><span>Age :</span> 31</li>
+                        <li><span>City :</span>Yangon , MYANMAR</li>
+                        <li><span>Email : </span>nuwaithu90@gmail.com</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div id="resume">
+            <section class="education">
+                <h1>Education</h1>
+                <p>December 2006 – March 2013 <br>
+                    West Yangon Technology University – Bachelor of Engineer (Information Technology) <br>
+                    January 2013 – March 2013 <br> KMD Computer Training Center – Basic Java Course <br>
+
+                    May 2013 – June 2015 <br> Self Study – Objective-C Language <br>
+
+                    June 2015 – Present <br> Self Study – Swift Language <br>
+
+                    <span>Language : </span> <span>English(Intermediate Level),Japanese(N3)</span> 
+                </p>
+            </section>
+            <section class="skill">
+                <h1>Skill</h1>
+                <div class="swift">
+                    <section>
+                        <p>Swift</p>
+                        <p class="hundred">100%</p>
+                    </section>
+                </div>
+                <div class="third-party">
+                    <section>
+                        <p>3rd Party SDK and API Integration</p>
+                        <p class="hundred">100%</p>
+                    </section>
+                </div>
+                <div class="ios-sdk">
+                    <section>
+                        <p>iOS SDK</p>
+                        <p>90%</p>
+                    </section>
+                </div>
+                <div class="ios-version">
+                    <section>
+                        <p>iOS Version and Device</p>
+                        <p>90%</p>
+                    </section>
+                </div>
+                <div class="objective-c">
+                    <section>
+                        <p>Objective-C</p>
+                        <p>80%</p>
+                    </section>
+                </div>
+                <div class="javascript">
+                    <section>
+                        <p>Java</p>
+                        <p>50%</p>
+                    </section>
+                </div>
+            </section>
+        </div>
+        
+        <a href="#" class="go-top-btn">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+    </main>
+</body>
+</html>

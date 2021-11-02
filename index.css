@@ -1,0 +1,359 @@
+:root{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #343a40;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    position: fixed;
+    top: 3%;
+    right: 1%;
+    color: white;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    background: #343a40;
+    border-radius: 50%;
+    display: none;
+    z-index: 1;
+}
+#cross-icon{
+    position: fixed;
+    top: 3%;
+    right: 1%;
+    color: white;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    background: #343a40;
+    border-radius: 50%;
+    display: none;
+    z-index: 1;
+}
+#navbar{
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(240, 235, 235);
+    border-right: 2px solid gray;
+}
+#navbar .image{
+    display: flex;
+    justify-content: center;
+}
+#navbar img{
+    width: 140px;
+    height: 140px;
+    border: 5px solid #343a40;
+    border-radius: 50%;
+    margin-top: 5%;
+    object-fit: cover;
+}
+#navbar h1{
+    color: #343a40;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Varela Round', sans-serif;
+}
+#navbar #contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+}
+#navbar #contact .social-logo{
+    width: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    background: #343a40;
+    color: white;
+}
+#navbar #contact .social-logo:hover,#navbar #contact .social-logo:focus{
+    border: 3px solid gray;
+    background: rgb(17, 14, 14); 
+}
+#navbar ul li{
+    list-style: none;
+    width: 70%;
+    padding: 5%;
+    line-height: 3;
+    border-radius: 1rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #343a40;
+    font-size: 1.2rem;
+}
+#navbar i{
+    font-size: 1.5rem;
+}
+#navbar ul li a i{
+    padding-right: 0.8rem;
+}
+#navbar ul li:hover{
+    background: #343a40;
+    box-shadow: 10px 10px 5px 0px rgba(65, 62, 62, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(65, 62, 62, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(65, 62, 62, 0.75);
+}
+#navbar ul li:hover span{
+    color: white;
+}
+#navbar ul li:hover i{
+    color: white;
+}
+
+#main{
+    width: 75%;
+    height: auto;
+    margin-left: 25%;
+    background: rgb(240, 235, 235);
+    justify-self: flex-end;
+    overflow-x: hidden;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+#welcome-section .header{
+    overflow: hidden;
+    transform: translateX(-5rem);
+    opacity: 0;
+    animation: slide-in-header 0.4s ease 0.7s forwards;
+}
+@keyframes slide-in-header{
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#welcome-section h1{
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 0.3rem;
+    color: rgb(240, 235, 235);
+    background: #343a40;
+    text-align: center;
+    transform: skewX(-15deg);
+}
+#welcome-section p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    position: relative;
+}
+#welcome-section p::after{
+    content: "";
+    position: absolute;
+    left: 2.5rem;
+    width: 100%;
+    height: 100%;
+    background: rgb(240, 235, 235);
+    border-left: 1px solid black;
+    animation: typing 4s steps(20) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 109%;
+    }
+}
+#welcome-section img{
+    width: 10%;
+    height: 10%;
+    object-fit: contain;
+    border: 2px solid #343a40;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: translateY(5rem);
+    animation: slide-in-img 0.4s ease 0.5s forwards;
+}
+@keyframes slide-in-img {
+    to {
+        width: 100%;
+        height: 100%;
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#about,#resume{
+    padding: 1rem 2rem;
+    border-bottom: 2px solid gray;
+    word-spacing: 0.3rem;
+    line-height: 1.5rem;
+}
+#about h1{
+    background: #343a40;
+    padding: 0.5rem;
+    width: 15rem;
+    text-align: center;
+    transform: skewX(-15deg);
+    color: rgb(240, 235, 235);
+}
+.about-1 p{
+    line-height: 2.5rem;
+}
+.about ul{
+    padding-left: 2rem;
+}
+.about ul li{
+    line-height: 2;
+}
+.about ul li span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#resume h1{
+    background: #343a40;
+    padding: 0.5rem;
+    width: 15rem;
+    text-align: center;
+    transform: skewX(-15deg);
+    color: rgb(240, 235, 235);
+}
+#resume .education{
+    line-height: 2.5rem;
+}
+#resume .education p span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.swift,.objective-c,.javascript,.third-party,.ios-sdk,.ios-version{
+    width: 80%;
+    height: 2.5rem;
+    background: rgb(170, 169, 169);
+    border: 2px solid #343a40;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+.swift section,.objective-c section,.javascript section,.third-party section,
+.ios-sdk section,.ios-version section{
+    display: flex;
+    padding: 0 1rem;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(240, 235, 235);
+    background: #343a40;
+}
+.hundred{
+    margin-right: 2rem;
+}
+.swift section,.third-party section{
+    width: 100%;
+}
+.objective-c section{
+    width: 80%;
+}
+.javascript section{
+    width: 50%;
+}
+.ios-sdk section,.ios-version section{
+    width: 90%;
+}
+
+.go-top-btn{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    color: white;
+    background: #343a40;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 900px){
+    :root{
+        font-size: 14px;
+    }
+    .checkbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cross-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+    }
+    #navbar{
+        width: 40%;
+        left: -41%;
+        z-index: 1;
+        transition: all 1s;
+    }
+    #main{
+        width: 100%;
+        margin: 0;
+    }
+    #check:checked ~ #navbar{
+        left: 0;
+    }
+    #check:checked ~ .checkbtn{
+        opacity: 0;
+    }
+    #check:checked ~ #cross-icon{
+        opacity: 1;
+    }
+}
+@media (max-width: 600px){
+    :root{
+        font-size: 10px;
+    }
+    #navbar{
+        width: 50%;
+        left: -51%;
+        z-index: 1;
+        transition: all 1s;
+    }
+}
+@media (max-width: 420px){
+    :root{
+        font-size: 9px;
+    }
+}
+@media (max-width: 380px){
+    :root{
+        font-size: 8px;
+    }
+    #navbar{
+        width: 60%;
+        left: -61%;
+        z-index: 1;
+        transition: all 1s;
+    }
+    #welcome-section h1{
+        font-size: 2.5rem;
+    }
+    #welcome-section p{
+        font-size: 1.2rem;
+    }
+}
